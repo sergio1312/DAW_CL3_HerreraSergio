@@ -1,1 +1,14 @@
-<p>form-numeros works!</p>
+<div class="container mt-5">
+    <h2>Verificar numero capicua</h2>
+    <form>
+      <div class="mb-3">
+        <label for="numero" class="form-label">Ingrese numero de dos cifras:</label>
+        <input type="number" class="form-control" name="numero" [(ngModel)]="numero">
+      </div>
+      <button type="button" class="btn btn-primary" (click)="verificarCapicua()">Verificar</button>
+    </form>
+    <div class="mt-3">
+      <h3>{{resultado}}</h3>
+    </div>
+  </div>
+  

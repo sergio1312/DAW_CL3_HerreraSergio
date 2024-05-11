@@ -16,7 +16,7 @@ export class FormLlamadasComponent {
     if (this.minutos <= 5) {
       this.costoTotal = 10
     } else {
-      const minutosAdicionales = this.minutos - 5
+      const minutosAdicionales = this.minutos - 5;
       this.costoTotal = 10 + (minutosAdicionales * 2)
     }
   }

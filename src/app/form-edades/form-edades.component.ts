@@ -10,9 +10,9 @@ import { FormsModule } from '@angular/forms';
 })
 export class FormEdadesComponent {
 
-  edadDelMayor: number = 0
-  edadDelMenor: number = 0
-  diferenciaEdades: number = 0
+  edadDelMayor:number = 0
+  edadDelMenor:number = 0
+  diferenciaEdades:number = 0
 
   calcularDiferenciaEdades() {
     if (this.edadDelMayor >= this.edadDelMenor) {

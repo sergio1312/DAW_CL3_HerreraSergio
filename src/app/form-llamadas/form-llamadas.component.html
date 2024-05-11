@@ -3,7 +3,7 @@
     <form>
       <div class="mb-3">
         <label for="minutos" class="form-label">Duración de la llamada (minutos):</label>
-        <input type="number" class="form-control" id="minutos" [(ngModel)]="minutos">
+        <input type="number" class="form-control" name="minutos" [(ngModel)]="minutos">
       </div>
       <button type="button" class="btn btn-primary" (click)="calcularCosto()">Calcular Costo</button>
     </form>
