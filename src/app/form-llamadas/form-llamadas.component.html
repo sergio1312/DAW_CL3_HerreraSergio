@@ -1,1 +1,14 @@
-<p>form-llamadas works!</p>
+<div class="container mt-5">
+    <h2>Calculadora de Costo de Llamadas</h2>
+    <form>
+      <div class="mb-3">
+        <label for="minutos" class="form-label">Duración de la llamada (minutos):</label>
+        <input type="number" class="form-control" name="minutos" [(ngModel)]="minutos">
+      </div>
+      <button type="button" class="btn btn-primary" (click)="calcularCosto()">Calcular Costo</button>
+    </form>
+    <div class="mt-3">
+      <h3>Costo total de la llamada: ${{ costoTotal }}</h3>
+    </div>
+  </div>
+  

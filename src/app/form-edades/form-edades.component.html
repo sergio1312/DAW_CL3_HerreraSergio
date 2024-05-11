@@ -1,1 +1,18 @@
-<p>form-edades works!</p>
+<div class="container mt-5">
+    <h2>Cálculo de Edades de Hermanos</h2>
+    <form>
+      <div class="mb-3">
+        <label for="edadMayor" class="form-label">Edad del hermano mayor:</label>
+        <input type="number" class="form-control" name="edadMayor" [(ngModel)]="edadDelMayor">
+      </div>
+      <div class="mb-3">
+        <label for="edadMenor" class="form-label">Edad del hermano menor:</label>
+        <input type="number" class="form-control" name="edadMenor" [(ngModel)]="edadDelMenor">
+      </div>
+      <button type="button" class="btn btn-primary" (click)="calcularDiferenciaEdades()">Calcular diferencia de edades</button>
+    </form>
+    <div class="mt-3">
+      <h3>La diferencia de edad es {{diferenciaEdades}} años.</h3>
+    </div>
+  </div>
+  
